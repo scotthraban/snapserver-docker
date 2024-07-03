@@ -1,0 +1,12 @@
+version: "3"
+services:
+  snapcast-server:
+    image: snapcast-server
+    ports:
+      - 1704:1704
+      - 1705:1705
+      - 1780:1780
+      - 4900:4900
+      - 4901:4901
+    volumes:
+      - ./docker/snapserver.conf:/etc/snapserver/snapserver.conf
